@@ -48,10 +48,10 @@ ufw default deny incoming
 ufw default deny outgoing
 ```
 ```
-ufw allow out on tun0 'comment allow any out on tun0 i.e. VPN'
+ufw allow out on tun0 comment 'allow any out on tun0 i.e. VPN'
 ```
 ```
-ufw allow out on eth0 log to 10.0.2.0/24 'comment local_network'
+ufw allow out on eth0 log to 10.0.2.0/24 comment 'local_network'
 ```
 ## repeat for each VPN server/port/proto
 ```
